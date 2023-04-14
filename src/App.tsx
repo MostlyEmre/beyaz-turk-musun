@@ -30,6 +30,12 @@ function App() {
     } else if (score > 3000) {
       setResult(`${score} puan ile "Bembeyaz Turk"sun.`);
     }
+
+    setScore(0);
+
+    // reset form
+    const form = document.querySelector("form");
+    form?.reset();
   };
 
   return (
@@ -168,4 +174,8 @@ const ButtonWrapper = styled.div`
   padding-right: 1rem;
 `;
 
-const Result = styled.div``;
+const Result = styled.div`
+  margin-top: 1rem;
+  padding: 1rem;
+  border: 3px solid orangered;
+`;
