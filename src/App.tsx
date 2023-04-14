@@ -13,6 +13,7 @@ function App() {
     const checkboxes = document.querySelectorAll("input[type=checkbox]:checked");
     let score = 0;
     checkboxes.forEach((checkbox) => {
+      // @ts-ignore
       score += Number(+checkbox.value);
     });
     setScore(score);
