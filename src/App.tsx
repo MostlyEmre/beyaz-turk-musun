@@ -85,6 +85,11 @@ function App() {
         <a href="https://eksisozluk2023.com/ne-kadar-beyaz-turksun-testi--7637464" target="_blank">
           baslikk
         </a>
+        <br />
+        bisi eklemek istersen:{" "}
+        <a href="https://github.com/MostlyEmre/beyaz-turk-musun" target="_blank">
+          github
+        </a>
       </footer>
     </Root>
   );
