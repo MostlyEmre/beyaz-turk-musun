@@ -65,7 +65,7 @@ function App() {
           </button>
         </ButtonWrapper>
 
-        <Result>{result}</Result>
+        {result && <Result>{result}</Result>}
       </Form>
       <br />
       <hr />
@@ -103,7 +103,6 @@ const Header = styled.div`
   gap: 0;
   align-items: center;
   margin-bottom: 10px;
-  background-color: lightgray;
   padding: 1rem;
   border-radius: 10px;
   h1 {
@@ -131,8 +130,8 @@ const Altintop = styled.div<AltintopProps>`
   background-image: url(${(props) => props.image});
   background-size: cover;
   background-position: center;
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
 `;
 
